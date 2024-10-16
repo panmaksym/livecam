@@ -22,7 +22,7 @@ class StreamService : Service() {
     private var webSocket: WebSocket? = null
     private var isRegistered = false
 
-    private val SIGNALING_SERVER_URL = "ws://109.201.241.40:5000"
+    private val SIGNALING_SERVER_URL = "ws://${BuildConfig.IP_ADDRESS}:${BuildConfig.PORT}"
 
     override fun onCreate() {
         super.onCreate()
